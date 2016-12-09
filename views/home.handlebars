@@ -1,0 +1,23 @@
+<div class='page_title'>
+	<h2>Welcome {{user}}</h2>
+	{{#if logout}}
+	<a href='logout'>Logout</a>
+	{{/if}}
+</div>
+<div class='home_page'>
+	<h2>Find Title</h2>
+	Search for a movie using the movie title and year.  The year is optional, if it is not 
+	included the result will be the most recent movie that matches the title.  If a year 
+	is provided a search will be done for the title and year.<br>
+	<a href='/movie'>Find Title</a><br>
+</div>
+<div class='home_page'>
+	<h2>Search Title</h2>
+	Search for movies with a given title.  The title search for is used as keyword.  Multiple
+	movies with that word or phrase in the title will be displayed.  The search returns at most 
+	ten titles.  The titles are displayed from most recent to oldest.<br>
+	<a href='/search'>Search Title</a>
+</div>
+<div class='pager'>
+	<a href='/'>Back</a>
+</div>

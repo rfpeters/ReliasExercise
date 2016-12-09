@@ -1,0 +1,33 @@
+<div class='page_title'>
+	<h2>Find Title</h2>
+</div>
+<form action='/movie' method='post'>
+	<label for='title' class='form_label'>Title: </label><br>
+	<input type='text' name='title' id='title' required><br>
+	<label for='year' class='form_label'>Year: </label><br>
+	<input type='text' name='year' id='year'><br>
+	<input type='submit' id='findTitle' value='Search'>
+</form>
+<div class='results'>
+	{{#if no_title}}
+	<div class='no_movie'>
+		{{message}}
+	</div>
+	{{else}}
+	<div class='movie_info'>
+		<div class='poster'>
+			<img src={{img_src}} height=200px width=150px>
+		</div>
+		<div class='movie_data'>
+			<label class='title'><b>Title: </b>{{title}}</label><br>
+			<label class='year'><b>Year: </b>{{year}}</label><br>		
+			<label class='desc'><b>Synopsis: </b>{{desc}}</label><br>
+			<label class='rating'><b>Rated: </b>{{rating}}</label><br>
+		</div>
+	</div>
+	{{/if}}
+</div>
+<br>
+<div class='pager'>
+	<a href='/home'>Back</a>
+</div>

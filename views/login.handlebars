@@ -1,0 +1,16 @@
+<div class='page_title'>
+	<h2>Login</h2>
+</div>
+<form action='/login' method='post'>
+	<label for='email' class='form_label'>Email: </label><br>
+	<input type='text' name='email' id='email' required><br>
+	<label for='password' class='form_label'>Password: </label><br>
+	<input type='password' name='password' id='password' required><br>
+	<input type='submit' id='login_submit' value='Login'>
+</form>
+<div class='user_error'>
+	{{err_message}}
+</div>
+<div class='pager'>
+	<a href='/'>Back</a>
+</div>
