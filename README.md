@@ -25,7 +25,7 @@ Introduction:
 	the page will only ask for a title.  The title entered is used for a keyword search.  At most ten movies will be return.  
 	The movies will be displayed with a poster, title, and year.  The movies are ordered for most recent to oldest.  There are 
 	pages for Page Not Found and Server Errors.
-	
+<pre>	
 File Structure:
 	/ (Directory of Choice)
 	|
@@ -66,3 +66,4 @@ File Structure:
 	|- package.json
 	|
 	|- README.md
+</pre>
