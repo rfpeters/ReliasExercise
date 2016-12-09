@@ -1,7 +1,7 @@
 Lookup Movies With OMDb
 Author: Ryan Peters
 
-Introduction:
+
 	The application is used to search for movies using OMDb.  The application is running on an Amazon EC2 instance.
 	It is built using Node.js with the Express framework and using the Handlebars template system.  The website 
 	can be accessed at http://52.10.11.248:4000.  All the files needed to run the application on a machine that 
